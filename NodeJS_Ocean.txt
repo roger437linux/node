@@ -1,0 +1,115 @@
+
+** Preparação
+https://github.com/paulosalvatore/samsung-ocean-preparacao-trilhas/blob/main/Samsung%20Ocean%20-%20Prepara%C3%A7%C3%A3o%20(Trilha%20Backend).pdf
+
+** Quadro branco
+https://miro.com/app/board/o9J_lsPCw6E=/?invite_link_id=285813280661
+
+** Github
+https://github.com/paulosalvatore/ocean-backend-06-e-13-10-2021
+
+
+*******************************************************
+
+
+** Inicializar projeto [Criar package.json]
+
+aluno@debian:~/node$ npm init -y
+
+
+** Express
+
+$ npm install express
+
+
+==> No editor
+
+const express = require('express')
+const app = express()
+ 
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+ 
+app.listen(3000)
+
+
+==> Executar
+
+$ node index
+
+
+*******************************************************
+
+
+** Instalar no VSCode Extensão: thunder client <Extensão para requisições HTTP>
+
+==> No ícone gerado <raio> ==> New request
+
+
+
+** Online REST & SOAP API Testing Tool [para GitPod]
+
+https://reqbin.com/
+
+
+*******************************************************
+
+
+Exemplo de projeto:
+
+https://woliveiras.com.br/posts/criando-um-curr%C3%ADculo-com-node-js-express-e-templates-ejs/
+
+
+
+*******************************************************
+
+
+==> Ferramenta para reiniciar servidor ao alterar o código
+
+npm nodemon <navegador>
+
+** Dependencia de desenvolvimento, ou seja, usar somente durante a etapa dedesenvolvimento.
+
+$ npm install --save-dev nodemon
+
+==> Criar script de execução do nodemon
+
+No arquivo "package.json" deixar como abaixo na área de script:
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {    
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
+
+
+==> Para executar agora:
+
+$ npm run dev
+
+
+
+
+
+
+
+
+
+
+
+
+
